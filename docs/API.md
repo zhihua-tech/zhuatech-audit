@@ -36,3 +36,20 @@
 | `managementAccepted` | boolean | 管理层已确认 |
 
 接口统一返回 `ApiResponse`；业务冲突使用 HTTP 409，参数错误使用 400，未认证使用 401，无权限使用 403。
+
+## 专业审计接口
+
+| 方法 | 路径 | 说明 |
+| --- | --- | --- |
+| GET | `/api/audit-ops/dashboard` | 审计项目、底稿和发现总览 |
+| POST | `/api/audit-ops/engagements` | 创建审计项目 |
+| POST | `/api/admin/audit-ops/engagements/{id}/approve` | 批准项目 |
+| POST | `/api/audit-ops/engagements/{id}/start` | 启动项目 |
+| POST | `/api/audit-ops/engagements/{id}/workpapers` | 建立底稿和证据摘要 |
+| POST | `/api/admin/audit-ops/workpapers/{id}/review` | 独立复核底稿 |
+| POST | `/api/audit-ops/engagements/{id}/findings` | 登记审计发现 |
+| POST | `/api/audit-ops/findings/{id}/action-plan` | 提交整改计划 |
+| POST | `/api/audit-ops/findings/{id}/remediate` | 提交整改证据 |
+| POST | `/api/admin/audit-ops/findings/{id}/verify` | 复核整改有效性 |
+| POST | `/api/admin/audit-ops/engagements/{id}/issue-report` | 出具报告 |
+| POST | `/api/admin/audit-ops/engagements/{id}/close` | 审计项目结项 |

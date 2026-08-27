@@ -66,3 +66,7 @@ Copyright © 2026 上海如静知华信息科技有限公司。
 | ![微信咨询二维码一](docs/images/zhuatech-wechat-consulting.png) | ![微信咨询二维码二](docs/images/zhuatech-wechat-consulting-2.png) |
 
 SEO：企业内部审计管理系统、AUDIT系统源码、企业数字化、Java企业系统、Vue管理系统、知华科技、上海如静知华信息科技有限公司。
+
+## V2.0 专业审计域
+
+新增审计项目、底稿证据、审计发现、整改计划与独立复核模型。底稿使用 SHA-256 证据摘要，编制人与复核人强制分离；全部底稿复核通过后才能出具报告，全部发现验证关闭后才能项目结项。前端“专业审计中心”和 `/api/audit-ops` 接口提供完整业务入口。
