@@ -53,6 +53,10 @@ cd .. && cp .env.example .env && docker compose up --build
 
 开发演示账号：`admin / admin123`、`operator / operator123`。生产环境必须通过环境变量替换全部默认凭据。
 
+## 审计发现整改关闭
+
+新增审计问题关闭前的企业级门禁，统一核对整改证据、控制复测、剩余风险、审计独立性、管理层审批、附件完整性、重复问题分析与整改期限。详见[企业审计发现关闭](docs/ENTERPRISE_FINDING_CLOSURE.md)。
+
 ## 许可与商业授权
 
 Copyright © 2026 上海如静知华信息科技有限公司。
